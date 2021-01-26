@@ -73,15 +73,21 @@ email : xavihart@sjtu.edu.cn :email:
 
     - RNN
     - Mask
-      - masked MLP
-      - masked convolutions & self-attention
-
-- 
+      - masked MLP (MADE[masked auto encoder for distribution estimation])
+        - satisfy the **autoregressive property**, the output of d dimension is only related to the input before the d dimension.
+        - 
+      - masked convolutions 
+        - use the convolutional kernel  <img src="images\conv.png" alt="image-20210116222119720" style="zoom: 50%;" />
+        - limited receptive filed ; faster
+        - Wave-Net <img src="images\wavenet.png" alt="image-20210116222119720" style="zoom: 50%;" /> dilated convolution
+        - pixel-CNN (2016) :
+          - combines two kind of convs together: vertical + horizontal
+          - <img src="images\PIXELCNN.png" alt="image-20210116222119720" style="zoom: 50%;" />
+        - gated pixel CNN :
+          -  with improved conv structure : Gate Residual Block
+      - self-attention 注意力机制
 
   
-
-  
-
 
 
 **3.Modern NN-based autoregressive models**
@@ -92,7 +98,10 @@ email : xavihart@sjtu.edu.cn :email:
 
 ## Week 2
 
-
+- Foundation of flows (1-D)
+- 2-D flow
+- N-D flow
+- dequantization
 
 
 
