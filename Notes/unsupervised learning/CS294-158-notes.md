@@ -1,8 +1,10 @@
-# CS294-158 (Spring 2019)
+# CS294-158 (Spring 2020)
 
 Deep unsupervised learning from @ucb
 
-class video from https://www.bilibili.com/video/BV1Eb411Y7J5?p=1
+class video from(SP19) https://www.bilibili.com/video/BV1Eb411Y7J5?p=1
+
+​                             (SP20)https://www.bilibili.com/video/BV1oE411F7iz?p=2
 
 ---
 
@@ -48,12 +50,31 @@ email : xavihart@sjtu.edu.cn :email:
 
   - DAG: vertex->property & edge->dependency & define parents and children
   - PGM(probability graph model) = Markov(无向) Net + Bayes Net(有向) 
+  - sparsity the $2^i$ sized tabular
 
-  <img src="D:\data\WinHoliday_Sememster5\Notes\unsupervised learning\images\bayesnet.png" alt="image-20210116222119720" style="zoom: 150%;" />
+  <img src="images\bayesnet.png" alt="image-20210116222119720" style="zoom: 150%;" />
 
 - Autoregressive Models
 
-  - 
+  - a fully expressive Bayes Net (just a chain rule model)
+
+  - $logp(x)=\sum_{}^{}logp(x_i|x_{1:i-1})$
+
+  - A toy example: p(x1, x2) = p(x1)p(x2|x1)
+
+    - p(x1) : histogram
+    - p(x2|x1): MLP with input x1 and output joint distribution of p(x2|x1)
+
+    - Extent to high dimensions: 
+      - only need O(d) Param instead of O(e^d) tabular Param
+      - no share of information between different conditional distribution 
+
+  - popular models:
+
+    - RNN
+    - Mask
+      - masked MLP
+      - masked convolutions & self-attention
 
 - 
 
