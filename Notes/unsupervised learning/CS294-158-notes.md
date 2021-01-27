@@ -75,7 +75,7 @@ email : xavihart@sjtu.edu.cn :email:
     - Mask
       - masked MLP (MADE[masked auto encoder for distribution estimation])
         - satisfy the **autoregressive property**, the output of d dimension is only related to the input before the d dimension.
-        - 
+        - **more** to referred to in the MADE arxiv paper
       - masked convolutions 
         - use the convolutional kernel  <img src="images\conv.png" alt="image-20210116222119720" style="zoom: 50%;" />
         - limited receptive filed ; faster
@@ -99,9 +99,39 @@ email : xavihart@sjtu.edu.cn :email:
 ## Week 2
 
 - Foundation of flows (1-D)
-- 2-D flow
-- N-D flow
+
+  - how to fit a density model
+
+    - mixture of gaussians ?
+      $$
+      p_{\theta}(x) = \sum_{i=1}^{k}\pi_{i}\mathcal{N}(x;\mu_i;\sigma_i)
+      $$
+
+  not right for high dimensional data !
+
+  <img src="images\flow.png" alt="image-20210116222119720" style="zoom: 90%;" />
+
+  - x -> z , can calculate and get a bridge between p(x) and p(z)
+
+  - After SGD optimization to get z, we sample z and project back to x to get the real sample 
+  - 有点类似DIP里的直方图均衡
+
+- 2-D flow ：the same as 1-D
+
+- N-D flow 
+
+  - Autoregressive flows and inverse autoregressive flow
+    - 
+  - RealNVP-like arch
+  - Glow, Flow++, FFJORD
+
 - dequantization
+
+
+
+
+
+--------------- TO P3 60:00 ---------------------
 
 
 
