@@ -1,0 +1,19 @@
+NIPS2020
+
+-----shapley value--------
+Asymmetric Shapley values: incorporating causal knowledge into model-agnostic explainability
+
+Causal Shapley Values: Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models
+
+Neuron Shapley: Discovering the Responsible Neurons
+
+How does This Interaction Affect Me? Interpretable Attribution for Feature Interactions 
+
+Detecting Interactions from Neural Networks via Topological Analysis 
+
+Variational Interaction Information Maximization for Cross-domain Disentanglement 
+
+-------interpretation-------
+How Can I Explain This to You? An Empirical Study of Deep Neural Network Explanation Methods
+
+Regularizing Black-box Models for Improved Interpretability  , Eric Xing
